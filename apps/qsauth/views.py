@@ -35,7 +35,7 @@ class LoginView(View):
                 messages.info(request,'Username/Password is not correct！')
                 return redirect(reverse('qsauth:login'))
         else:
-            messages.info(request,'Form authentication failed！')
+            messages.info(request,'Username/Password is not correct！')
             return redirect(reverse('qsauth:login'))
 
 def logout_view(request):
